@@ -102,6 +102,15 @@ legend{
     border-radius: 3px;
     border: 1px solid rgba(131, 131, 131, 0.452);
 }
+#info-holder input:focus{
+    outline: none;
+    border-color: #71ac3f;
+    box-shadow: 0 0 3px rgba(68, 70, 67, 0.5);
+}
+#info-holder input[type="password"]:invalid{
+    border-color: #e74c3c;
+    box-shadow: 0 0 3px rgba(231, 76, 60, 0.5);
+}
 button[type="submit"]{
     margin-top: 1rem;
     padding: 1% 3%;
