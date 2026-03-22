@@ -1,0 +1,132 @@
+:root,*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5em;
+    background-color: aliceblue;
+}
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#img-holder{
+    width: 30%;
+    position: relative; /* added so #bar can be positioned relative to this container */
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+#bar{
+    background-color: rgba(0, 0, 0, 0.788);
+    width: 100%;        /* larger so it's visible */
+    height: 20%;
+    position: absolute; /* place on top of the image */
+    top: 20%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#bar img{
+    max-height: 90%;
+    width: auto;
+}
+#bar p{
+   color: aliceblue;
+   font-size: 4rem;
+}
+#form-holder{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 70vw;
+}
+#description{
+    width: 70%;
+    margin-bottom: 2rem;
+    text-align: start;
+    align-self: flex-start;
+    font-size: 1.15rem;
+    padding:  1rem 2rem;
+    margin: 0 0;
+}
+#description p{
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+#info-holder{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: white;
+    padding: 3%;
+    border: none;
+    box-shadow: 0 3px 10px  rgba(0, 0, 0, 0.253);
+}
+legend{
+    position: relative;
+    top: 1em;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+#info-holder > div{
+    display: flex;    
+    align-items: flex-start;
+    gap: 5rem;
+}
+#info-holder label{
+    display: block;
+    margin: 0 0 -3px 0;
+    font-size: 0.85rem;
+}
+#info-holder input{
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 0;
+    border-radius: 3px;
+    border: 1px solid rgba(131, 131, 131, 0.452);
+}
+button[type="submit"]{
+    margin-top: 1rem;
+    padding: 1% 3%;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #596D48;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 3%;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+button[type="submit"]:hover{
+    background-color: #344128;
+}
+#form-holder>p{
+    position: relative;
+    right: 36%;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+p>a{
+    color: #596D48;
+    font-weight: 600;
+    text-decoration: none;
+}
